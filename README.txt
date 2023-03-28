@@ -7,3 +7,4 @@ ETAPE 2:
 	- create a virtual environment with: virtualenv <name>
 	- to activate the virtualenv: <name>/Scripts/activate
 	- pip install django, pillow to start with django
+	- django-admin startproject <name_of_the_project>
