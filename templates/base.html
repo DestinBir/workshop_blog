@@ -18,14 +18,6 @@
         <div class="user">
             {% if user.is_authenticated %}
                 <h2>{{ user.username }}</h2>
-                <div class="decon">
-                    <a href="{% url  'logout' %}">Deconnexion</a>
-                </div>
-            {% else %}
-                <div class="inscricon">
-                    <a href="{% url 'signup' %}">S'inscrire</a>
-                    <a href="{% url  'login' %}">Connexion</a>
-                </div>
             {% endif %}
         </div>
     </div>

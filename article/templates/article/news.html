@@ -2,18 +2,21 @@
 
 {% block content %}
 
-    {% for product in products %}
+    {% for new in news %}
         <div class="news">
             <div class="image" >
-                <img src="{{ new.picture.url }}" alt="{{ new.title }}" >
+                <img src="{{ new.picture.url }}" alt="{{ new.title }}" width="300px">
             </div>
             <h2>{{ new.title }}</h2>
             <p class="content">
                 {{ new.content }}
             </p>
             <div class="details">
-                <a href="{{ product.get_absolute_url }}">Voir plus</a>
+                <p>{{ new.author }}</p>
+                <p>{{ new.date }}</p>
             </div>
+            <br>
+            <p>----------------------------------------------------------------------</p>
         </div>
     {% endfor %}
 
