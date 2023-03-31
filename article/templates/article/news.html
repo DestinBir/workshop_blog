@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for product in products %}
+        <div class="news">
+            <div class="image" >
+                <img src="{{ new.picture.url }}" alt="{{ new.title }}" >
+            </div>
+            <h2>{{ new.title }}</h2>
+            <p class="content">
+                {{ new.content }}
+            </p>
+            <div class="details">
+                <a href="{{ product.get_absolute_url }}">Voir plus</a>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
